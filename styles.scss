@@ -83,10 +83,10 @@ section {
 
 #info {
   display: flex;
-  justify-content: center;
 
   .card-info {
     margin-top: 161px;
+    margin-left: 20px;
     height: 55px;
     width: 335px;
     background-color: $white;
@@ -101,15 +101,16 @@ section {
       display: flex;
       align-items: center;
       height: 55px;
+      width: 335px;
       padding-left: 10px;
     }
   }
 
   img {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 162px;
-    right: 20px;
+    top: 80px;
+    right: 56px;
   }
 }
 
