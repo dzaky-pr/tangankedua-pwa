@@ -13,9 +13,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #header {
@@ -48,7 +48,7 @@ section {
   cursor: pointer;
 }
 
-#searchbar .search-bar {
+#searchbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,8 +63,6 @@ section {
   border-style: solid;
   border-color: #a5c05b;
   border-width: 1px;
-  -webkit-box-shadow: 0px 1px 30px #00000005;
-          box-shadow: 0px 1px 30px #00000005;
   font-size: 14px;
   z-index: 7;
   -webkit-box-pack: space-evenly;
@@ -72,7 +70,7 @@ section {
           justify-content: space-evenly;
 }
 
-#searchbar .search-bar i {
+#searchbar i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +83,7 @@ section {
   color: #939391;
 }
 
-#searchbar .search-bar input {
+#searchbar input {
   color: #939391;
   height: 40px;
   width: 295px;
@@ -94,18 +92,16 @@ section {
   outline: none;
 }
 
-#container {
+#info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 1px 30px #00000005;
-          box-shadow: 0px 1px 30px #00000005;
 }
 
-#container .card-info {
+#info .card-info {
   margin-top: 161px;
   height: 55px;
   width: 335px;
@@ -114,13 +110,11 @@ section {
   border-style: solid;
   border-color: #a5c05b;
   border-width: 1px;
-  -webkit-box-shadow: 0px 1px 30px #00000005;
-          box-shadow: 0px 1px 30px #00000005;
   font-size: 16px;
   font-weight: 500;
 }
 
-#container .card-info .card-info-text {
+#info .card-info .card-info-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +125,7 @@ section {
   padding-left: 10px;
 }
 
-#container img {
+#info img {
   position: absolute;
   z-index: 1;
   top: 162px;
@@ -142,6 +136,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 850px;
   width: 375px;
   background-color: #eaebeb;
@@ -172,5 +170,27 @@ section {
       justify-content: space-around;
   list-style: none;
   color: #939391;
+}
+
+#main .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px auto auto 20px;
+  border-radius: 15px;
+  width: 316px;
+  height: 160px;
+  background-color: #fff;
+}
+
+.card {
+  -webkit-box-shadow: 0px 1px 30px #00000005;
+          box-shadow: 0px 1px 30px #00000005;
 }
 /*# sourceMappingURL=styles.css.map */

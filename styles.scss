@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+$white: #fff;
 $grey25: #fafafa;
 $grey100: #eaebeb;
 $dark50: #939391;
@@ -20,14 +21,14 @@ body {
 
 section {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 #header {
   position: fixed;
   height: 81px;
   width: 375px;
-  background-color: #fff;
+  background-color: $white;
   box-shadow: $dropEffect;
   justify-content: center;
   align-items: center;
@@ -47,57 +48,52 @@ section {
 }
 
 #searchbar {
-  .search-bar {
+  display: flex;
+  top: 101px;
+  left: 20px;
+  right: 20px;
+  position: fixed;
+  height: 40px;
+  width: 335px;
+  background-color: $grey100;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: $houseplant100;
+  border-width: 1px;
+  font-size: 14px;
+  z-index: 7;
+  justify-content: space-evenly;
+
+  i {
     display: flex;
-    top: 101px;
-    left: 20px;
-    right: 20px;
-    position: fixed;
+    justify-content: center;
+    align-items: center;
+    color: $dark50;
+  }
+
+  input {
+    color: $dark50;
     height: 40px;
-    width: 335px;
-    background-color: $grey100;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: $houseplant100;
-    border-width: 1px;
-    box-shadow: $dropEffect;
-    font-size: 14px;
-    z-index: 7;
-    justify-content: space-evenly;
-
-    i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $dark50;
-    }
-
-    input {
-      color: $dark50;
-      height: 40px;
-      width: 295px;
-      border: none;
-      background-color: transparent;
-      outline: none;
-    }
+    width: 295px;
+    border: none;
+    background-color: transparent;
+    outline: none;
   }
 }
 
-#container {
+#info {
   display: flex;
   justify-content: center;
-  box-shadow: $dropEffect;
 
   .card-info {
     margin-top: 161px;
     height: 55px;
     width: 335px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 10px;
     border-style: solid;
     border-color: $houseplant100;
     border-width: 1px;
-    box-shadow: $dropEffect;
     font-size: 16px;
     font-weight: 500;
 
@@ -119,6 +115,7 @@ section {
 
 #main {
   display: flex;
+  flex-direction: column;
   height: 850px;
   width: 375px;
   background-color: $grey100;
@@ -146,4 +143,19 @@ section {
       color: $dark50;
     }
   }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px auto auto 20px;
+    border-radius: 15px;
+    width: 316px;
+    height: 160px;
+    background-color: $white;
+  }
+}
+
+.card {
+  box-shadow: $dropEffect;
 }
