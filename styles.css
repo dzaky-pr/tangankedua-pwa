@@ -9,6 +9,15 @@ body {
   background-color: #fafafa;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #header {
   position: fixed;
   height: 81px;
@@ -33,11 +42,16 @@ body {
 }
 
 #header .footer-assets .notification {
+  margin-top: 4px;
   position: absolute;
   right: 20px;
+  cursor: pointer;
 }
 
 #searchbar .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 101px;
   left: 20px;
   right: 20px;
@@ -53,30 +67,31 @@ body {
           box-shadow: 0px 1px 30px #00000005;
   font-size: 14px;
   z-index: 7;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#searchbar .search-bar i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #939391;
 }
 
 #searchbar .search-bar input {
+  color: #939391;
   height: 40px;
   width: 295px;
-  padding-left: 40px;
   border: none;
   background-color: transparent;
-}
-
-#searchbar ::-webkit-input-placeholder {
-  margin-left: 40px;
-}
-
-#searchbar :-ms-input-placeholder {
-  margin-left: 40px;
-}
-
-#searchbar ::-ms-input-placeholder {
-  margin-left: 40px;
-}
-
-#searchbar ::placeholder {
-  margin-left: 40px;
+  outline: none;
 }
 
 #container {
@@ -86,6 +101,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 0px 1px 30px #00000005;
+          box-shadow: 0px 1px 30px #00000005;
 }
 
 #container .card-info {
@@ -133,5 +150,27 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: #a5c05b;
+}
+
+#main .card-nav {
+  height: 21px;
+  width: 335px;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #fb8d97;
+  border-width: 1px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+#main .card-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  color: #939391;
 }
 /*# sourceMappingURL=styles.css.map */

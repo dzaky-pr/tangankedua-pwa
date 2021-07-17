@@ -2,6 +2,9 @@
 
 $grey25: #fafafa;
 $grey100: #eaebeb;
+$dark50: #939391;
+$dark100: #282623;
+$bumblegum75: #fb8d97;
 $dropEffect: 0px 1px 30px #00000005;
 $houseplant100: #a5c05b;
 
@@ -13,6 +16,11 @@ $houseplant100: #a5c05b;
 
 body {
   background-color: $grey25;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 #header {
@@ -30,14 +38,17 @@ body {
     margin-top: 24px;
 
     .notification {
+      margin-top: 4px;
       position: absolute;
       right: 20px;
+      cursor: pointer;
     }
   }
 }
 
 #searchbar {
   .search-bar {
+    display: flex;
     top: 101px;
     left: 20px;
     right: 20px;
@@ -52,24 +63,30 @@ body {
     box-shadow: $dropEffect;
     font-size: 14px;
     z-index: 7;
+    justify-content: space-evenly;
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $dark50;
+    }
 
     input {
+      color: $dark50;
       height: 40px;
       width: 295px;
-      padding-left: 40px;
       border: none;
       background-color: transparent;
+      outline: none;
     }
-  }
-
-  ::placeholder {
-    margin-left: 40px;
   }
 }
 
 #container {
   display: flex;
   justify-content: center;
+  box-shadow: $dropEffect;
 
   .card-info {
     margin-top: 161px;
@@ -110,4 +127,23 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: $houseplant100;
+
+  .card-nav {
+    height: 21px;
+    width: 335px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: $bumblegum75;
+    border-width: 1px;
+    margin-top: 12px;
+    cursor: pointer;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      color: $dark50;
+    }
+  }
 }

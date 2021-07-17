@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/0c226d72ca.js" crossorigin="anonymous"></script>
     <title>Tangankedua</title>
   </head>
   <body>
@@ -13,16 +14,17 @@
       <div class="footer-assets">
         <div class="footer-logo">
           <img src="./img/tangankedua.svg" alt="logo" />
-          <img class="notification" src="./img/notif.svg" alt="notification" />
+          <i class="far fa-bell fa-lg notification"></i>
         </div>
       </div>
     </header>
 
-    <!-- container -->
+    <!-- searchbar -->
     <section id="searchbar">
-      <div class="search-bar"><input type="input" name="search-bar" placeholder="Cari produk..." id="" /></div>
+      <div class="search-bar"><i class="fa fa-search" aria-hidden="true"></i><input type="input" name="search-bar" placeholder="Cari produk..." id="" /></div>
     </section>
 
+    <!-- card info -->
     <section id="container">
       <div class="card-info">
         <div class="card-info-text">
@@ -30,10 +32,22 @@
           Kamu Memiliki 5 Poin
         </div>
       </div>
+
       <img src="./img/buttonUpload.svg" alt="" />
     </section>
 
-    <section id="main"></section>
+    <!-- main -->
+    <section id="main">
+      <div class="card-nav">
+        <ul>
+          <li>Atasan</li>
+          <li>Bawahan</li>
+          <li>Aksesoris</li>
+          <li>Alas Kaki</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer></footer>
   </body>
