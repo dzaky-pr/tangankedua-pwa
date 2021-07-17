@@ -6,6 +6,7 @@ $grey100: #eaebeb;
 $dark50: #939391;
 $dark100: #282623;
 $bumblegum75: #fb8d97;
+$bublegum100: #fa6775;
 $dropEffect: 0px 1px 30px #00000005;
 $houseplant100: #a5c05b;
 
@@ -149,7 +150,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 24px auto auto 20px;
+    margin: 24px auto 0 20px;
     border-radius: 15px;
     width: 316px;
     height: 160px;
@@ -159,4 +160,38 @@ section {
 
 .card {
   box-shadow: $dropEffect;
+}
+
+.main-container {
+  width: 316px;
+  height: auto;
+  margin: 16px auto 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .container {
+    border-radius: 15px;
+    width: 150px;
+    height: 185px;
+    background-color: $white;
+  }
+}
+
+.text-info {
+  width: 335px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.cta-pink {
+  color: $bublegum100;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-info-container {
+  font-size: 16px;
+  font-weight: 500;
 }

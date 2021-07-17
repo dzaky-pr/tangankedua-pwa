@@ -181,7 +181,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px auto auto 20px;
+  margin: 24px auto 0 20px;
   border-radius: 15px;
   width: 316px;
   height: 160px;
@@ -191,5 +191,51 @@ section {
 .card {
   -webkit-box-shadow: 0px 1px 30px #00000005;
           box-shadow: 0px 1px 30px #00000005;
+}
+
+.main-container {
+  width: 316px;
+  height: auto;
+  margin: 16px auto 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .container {
+  border-radius: 15px;
+  width: 150px;
+  height: 185px;
+  background-color: #fff;
+}
+
+.text-info {
+  width: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 36px;
+}
+
+.cta-pink {
+  color: #fa6775;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-info-container {
+  font-size: 16px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=styles.css.map */
