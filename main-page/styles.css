@@ -18,15 +18,18 @@ section {
           align-items: center;
 }
 
-#content .wrapper {
+#content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#content .wrapper {
   max-width: 100%;
-  margin: 0px auto;
+  margin: 0 auto 0 auto;
 }
 
 #header {
@@ -64,7 +67,6 @@ section {
   display: -ms-flexbox;
   display: flex;
   top: 101px;
-  margin-left: 20px;
   position: fixed;
   height: 40px;
   width: 335px;
@@ -109,7 +111,6 @@ section {
 
 #info .card-info {
   margin-top: 161px;
-  margin-left: 20px;
   height: 55px;
   width: 335px;
   background-color: #fff;
