@@ -36,15 +36,15 @@ section {
 }
 
 #header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   height: 81px;
   width: 100vw;
   background-color: $white;
   box-shadow: $dropEffect;
-  justify-content: center;
-  align-items: center;
   z-index: 7;
-  display: flex;
 
   .header-assets {
     margin-top: 24px;
@@ -84,6 +84,7 @@ section {
       background-color: transparent;
       outline: none;
       padding-left: 10px;
+      width: 90%;
     }
   }
 }
@@ -168,17 +169,17 @@ section {
   }
 }
 
-#footer-bar {
-  // position: sticky;
-  // height: 81px;
-  // width: 375px;
-  // background-color: #000;
-  // box-shadow: $dropEffect;
-  // justify-content: center;
-  // align-items: center;
-  // z-index: 10;
-  // display: flex;
-}
+//#footer-bar {
+// position: sticky;
+// height: 81px;
+// width: 375px;
+// background-color: #000;
+// box-shadow: $dropEffect;
+// justify-content: center;
+// align-items: center;
+// z-index: 10;
+// display: flex;
+//}
 
 .card {
   box-shadow: $dropEffect;
