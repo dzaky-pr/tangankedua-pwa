@@ -25,6 +25,16 @@ section {
   align-items: center;
 }
 
+#content {
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+}
+
 #header {
   position: fixed;
   height: 81px;
@@ -51,8 +61,6 @@ section {
 #searchbar {
   display: flex;
   top: 101px;
-  left: 20px;
-  right: 20px;
   position: fixed;
   height: 40px;
   width: 335px;
