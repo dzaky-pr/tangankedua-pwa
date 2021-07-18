@@ -37,11 +37,11 @@ section {
   display: flex;
 }
 
-#header .footer-assets {
+#header .header-assets {
   margin-top: 24px;
 }
 
-#header .footer-assets .notification {
+#header .header-assets .notification {
   margin-top: 4px;
   position: absolute;
   right: 20px;
@@ -63,7 +63,6 @@ section {
   border-style: solid;
   border-color: #a5c05b;
   border-width: 1px;
-  font-size: 14px;
   z-index: 7;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -108,8 +107,6 @@ section {
   border-style: solid;
   border-color: #a5c05b;
   border-width: 1px;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 #info .card-info .card-info-text {
@@ -139,7 +136,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 850px;
+  height: auto;
   width: 375px;
   background-color: #eaebeb;
   margin-top: 20px;
@@ -206,10 +203,33 @@ section {
 }
 
 .main-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 15px;
   width: 150px;
   height: 185px;
   background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.main-container .container .text-info-item-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .text-info {
@@ -232,10 +252,65 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.text-info-container {
+.upload-btn {
+  cursor: pointer;
+}
+
+.info-10-reguler {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.info-10-medium {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.info-12-reguler {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info-12-medium {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.body-14-reguler {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.body-14-medium {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.body-16-reguler {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body-16-medium {
   font-size: 16px;
   font-weight: 500;
+}
+
+.header-22-bold {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header-30-bold {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.test {
+  height: 3000px;
+  z-index: -100;
 }
 /*# sourceMappingURL=styles.css.map */

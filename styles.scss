@@ -36,7 +36,7 @@ section {
   z-index: 7;
   display: flex;
 
-  .footer-assets {
+  .header-assets {
     margin-top: 24px;
 
     .notification {
@@ -115,7 +115,7 @@ section {
 #main {
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: auto;
   width: 375px;
   background-color: $grey100;
   margin-top: 20px;
@@ -155,6 +155,18 @@ section {
   }
 }
 
+#footer-bar {
+  // position: sticky;
+  // height: 81px;
+  // width: 375px;
+  // background-color: #000;
+  // box-shadow: $dropEffect;
+  // justify-content: center;
+  // align-items: center;
+  // z-index: 10;
+  // display: flex;
+}
+
 .card {
   box-shadow: $dropEffect;
 }
@@ -167,11 +179,20 @@ section {
   justify-content: space-between;
 
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 15px;
     width: 150px;
     height: 185px;
     background-color: $white;
     flex-direction: column;
+    gap: 12px;
+
+    .text-info-item-more {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -187,6 +208,11 @@ section {
   font-size: 14px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.upload-btn {
+  cursor: pointer;
 }
 
 // font assets
@@ -238,4 +264,9 @@ section {
 .header-30-bold {
   font-size: 30px;
   font-weight: 700;
+}
+
+.test {
+  height: 3000px;
+  z-index: -100;
 }
