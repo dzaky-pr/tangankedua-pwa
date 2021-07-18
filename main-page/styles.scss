@@ -60,64 +60,69 @@ section {
 
 #searchbar {
   display: flex;
-  top: 101px;
-  // margin-left: 20px;
-  position: fixed;
-  height: 40px;
-  width: 335px;
-  background-color: $grey100;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: $houseplant100;
-  border-width: 1px;
-  z-index: 7;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 100vw;
 
-  i {
+  .search-wrap {
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: $dark50;
-  }
-
-  input {
-    color: $dark50;
+    padding-left: 10px;
+    top: 101px;
+    // margin-left: 20px;
+    position: fixed;
+    background-color: $grey100;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $houseplant100;
+    border-width: 1px;
+    z-index: 7;
     height: 40px;
-    width: 295px;
-    border: none;
-    background-color: transparent;
-    outline: none;
+    width: 335px;
+    color: $dark50;
+
+    input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      padding-left: 10px;
+    }
   }
 }
 
 #info {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 
-  .card-info {
-    margin-top: 161px;
-    // margin-left: 20px;
-    height: 55px;
-    width: 335px;
-    background-color: $white;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: $houseplant100;
-    border-width: 1px;
+  .card-wrap {
+    flex-direction: row;
 
-    .card-info-text {
+    .card-info {
       display: flex;
+      justify-content: start;
+      padding-left: 10px;
       align-items: center;
+      margin-top: 161px;
+      // margin-left: 20px;
       height: 55px;
       width: 335px;
-      padding-left: 10px;
+      background-color: $white;
+      border-radius: 10px;
+      border-style: solid;
+      border-color: $houseplant100;
+      border-width: 1px;
     }
-  }
 
-  img {
-    position: relative;
-    z-index: 1;
-    top: 80px;
-    right: 56px;
+    .card-btn {
+      padding-left: 11px;
+      width: 335px;
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      z-index: 1;
+      top: 161.5px;
+    }
   }
 }
 
@@ -135,7 +140,7 @@ section {
 
   .card-nav {
     height: 21px;
-    width: 335px;
+    width: 93vw;
     background-color: transparent;
     border-style: solid;
     border-radius: 15px;

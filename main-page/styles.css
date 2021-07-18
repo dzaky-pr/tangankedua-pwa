@@ -66,22 +66,41 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+#searchbar .search-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
   top: 101px;
   position: fixed;
-  height: 40px;
-  width: 335px;
   background-color: #eaebeb;
   border-radius: 10px;
   border-style: solid;
   border-color: #a5c05b;
   border-width: 1px;
   z-index: 7;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  height: 40px;
+  width: 335px;
+  color: #939391;
 }
 
-#searchbar i {
+#searchbar .search-wrap input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding-left: 10px;
+}
+
+#info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,25 +110,27 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #939391;
+  width: 100vw;
 }
 
-#searchbar input {
-  color: #939391;
-  height: 40px;
-  width: 295px;
-  border: none;
-  background-color: transparent;
-  outline: none;
+#info .card-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-#info {
+#info .card-wrap .card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#info .card-info {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 161px;
   height: 55px;
   width: 335px;
@@ -120,23 +141,18 @@ section {
   border-width: 1px;
 }
 
-#info .card-info .card-info-text {
+#info .card-wrap .card-btn {
+  padding-left: 11px;
+  width: 335px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 55px;
-  width: 335px;
-  padding-left: 10px;
-}
-
-#info img {
-  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
   z-index: 1;
-  top: 80px;
-  right: 56px;
+  top: 161.5px;
 }
 
 #main {
@@ -159,7 +175,7 @@ section {
 
 #main .card-nav {
   height: 21px;
-  width: 335px;
+  width: 93vw;
   background-color: transparent;
   border-style: solid;
   border-radius: 15px;
